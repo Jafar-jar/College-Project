@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.helpme.User">
+  <tabs>
+    <Tab text="Login">
+      <content>
+        <AnchorPane fx:id="lastPainLogin" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="login" layoutX="274.0" layoutY="281.0" mnemonicParsing="false" onAction="#login" text="Enter !" />
+                  <PasswordField fx:id="loginPassword" layoutX="67.0" layoutY="132.0" promptText="password" />
+                  <TextField fx:id="loginUser" layoutX="68.0" layoutY="85.0" promptText="User" />
+                  <Label fx:id="eLabelLogin" layoutX="285.0" layoutY="228.0" textFill="RED" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab text="Register">
+      <content>
+        <AnchorPane fx:id="lastPainReg" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="firstNameReg" layoutX="35.0" layoutY="36.0" promptText="First Name" />
+                  <TextField fx:id="lastNameReg" layoutX="36.0" layoutY="73.0" promptText="Last Name" />
+                  <TextField fx:id="nationalID" layoutX="36.0" layoutY="112.0" promptText="National ID" />
+                  <TextField fx:id="regUser" layoutX="35.0" layoutY="233.0" promptText="User" />
+                  <Slider fx:id="age" layoutX="35.0" layoutY="142.0" majorTickUnit="1.0" minorTickCount="1" prefHeight="38.0" prefWidth="180.0" showTickLabels="true" snapToTicks="true" value="1.0" />
+                  <Label fx:id="linkToSlider" layoutX="234.0" layoutY="142.0" prefHeight="18.0" prefWidth="29.0" />
+                  <ComboBox fx:id="gender" layoutX="36.0" layoutY="190.0" prefWidth="150.0" promptText="Gender" />
+                  <PasswordField fx:id="regPassword" layoutX="36.0" layoutY="271.0" promptText="Password" />
+                  <Button layoutX="274.0" layoutY="178.0" mnemonicParsing="false" onAction="#tester" text="Register !" />
+                  <Label fx:id="eLabelReg" layoutX="286.0" layoutY="104.0" textFill="RED" />
+                  <PasswordField fx:id="confirmPassword" layoutX="37.0" layoutY="310.0" promptText="Confirm Password" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>
